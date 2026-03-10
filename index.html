@@ -55,6 +55,17 @@
         .card-info p { margin: 0; color: #888; font-size: 0.9rem; }
         .price { display: block; margin-top: 10px; color: #d4af37; font-weight: bold; font-size: 1.1rem; }
 
+        /* NATIVE HTML5 ACCORDION FAQ (LUXURY ZERO-JS) */
+        .faq-section { margin-top: 80px; }
+        .faq-container { display: flex; flex-direction: column; gap: 15px; font-family: sans-serif; }
+        details { background: #fff; border: 1px solid #eee; border-radius: 2px; overflow: hidden; transition: all 0.4s ease; box-shadow: 0 2px 10px rgba(0,0,0,0.02); }
+        details[open] { box-shadow: 0 10px 30px rgba(212,175,55,0.08); border-color: rgba(212,175,55,0.3); }
+        summary { padding: 22px 30px; font-weight: 600; font-size: 1rem; cursor: pointer; color: #111; list-style: none; display: flex; justify-content: space-between; align-items: center; outline: none; letter-spacing: 0.5px; }
+        summary::-webkit-details-marker { display: none; }
+        summary::after { content: '+'; font-size: 24px; color: #aaa; font-weight: 300; transition: transform 0.4s ease; }
+        details[open] summary::after { transform: rotate(45deg); color: #d4af37; }
+        .faq-content { padding: 0 30px 25px; color: #666; font-size: 0.95rem; line-height: 1.7; border-top: 1px solid transparent; }
+
         /* ELEGANT GOLD BEAM BUTTON (ACTION) */
         .cta-wrapper { text-align: center; margin: 80px 0; }
         @property --grad-angle { syntax: "<angle>"; initial-value: 0deg; inherits: false; }
@@ -113,6 +124,30 @@
             </article>
         </div>
 
+        <div class="faq-section">
+            <h2>Layanan & Informasi (FAQ)</h2>
+            <div class="faq-container">
+                <details>
+                    <summary>Bagaimana jika ukuran baju yang dibeli tidak pas?</summary>
+                    <div class="faq-content">
+                        Kenyamanan Anda adalah prioritas kami. Kami memberikan <strong>Garansi Tukar Ukuran</strong> maksimal 3 hari setelah barang diterima, dengan syarat tag label produk fashion masih terpasang dan belum dicuci.
+                    </div>
+                </details>
+                <details>
+                    <summary>Apakah produk kerajinan kulit ini asli buatan lokal?</summary>
+                    <div class="faq-content">
+                        Benar. Seluruh tas kulit dan aksesoris kami adalah kerajinan tangan <em>(handmade)</em> 100% karya pengrajin lokal Garut menggunakan material kulit sapi asli grade premium yang awet hingga puluhan tahun.
+                    </div>
+                </details>
+                <details>
+                    <summary>Apakah melayani pengiriman pesanan ke luar negeri?</summary>
+                    <div class="faq-content">
+                        Ya, kami melayani pengiriman internasional (Worldwide Shipping) menggunakan kurir ekspedisi terpercaya. Silakan hubungi admin butik kami via WhatsApp untuk perhitungan biaya kirim dan estimasi waktu sampai.
+                    </div>
+                </details>
+            </div>
+        </div>
+
         <div class="cta-wrapper">
             <a href="https://wa.me/628XXXXXXXXXX?text=Halo%20Admin,%20saya%20tertarik%20dengan%20koleksi..." class="gold-laser-btn">
                 Konsultasi & Pemesanan
@@ -121,20 +156,52 @@
         </div>
 
         <footer class="seo-faq">
-            <p><strong>Pencarian Terkait:</strong> jual baju tunik wanita elegan, tas kulit asli garut premium, kerajinan tangan lokal eksklusif, brand fashion lokal terbaik, umkm smesta fashion kriya, baju batik modern wanita.</p>
+            <p><strong>Pencarian Terkait (Tags):</strong> jual baju tunik wanita elegan, tas kulit asli garut premium, kerajinan tangan lokal eksklusif, brand fashion lokal terbaik, umkm smesta fashion kriya, baju batik modern wanita.</p>
         </footer>
     </main>
 
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Store",
-      "name": "Koleksi Fashion Lokal Premium",
-      "image": "https://domainanda.com/koleksi-fashion-wanita-elegan.webp",
-      "description": "Butik fashion dan kerajinan kulit lokal dengan standar kualitas ekspor.",
-      "priceRange": "$$$",
-      "telephone": "+628XXXXXXXXXX"
-    }
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "Koleksi Fashion Lokal Premium",
+        "image": "https://domainanda.com/koleksi-fashion-wanita-elegan.webp",
+        "description": "Butik fashion dan kerajinan kulit lokal dengan standar kualitas ekspor.",
+        "priceRange": "$$$",
+        "telephone": "+628XXXXXXXXXX"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Bagaimana jika ukuran baju yang dibeli tidak pas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kami memberikan Garansi Tukar Ukuran maksimal 3 hari setelah barang diterima, syarat tag label masih terpasang."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Apakah produk kerajinan kulit ini asli buatan lokal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Seluruh produk adalah kerajinan tangan (handmade) 100% karya pengrajin lokal menggunakan material kulit sapi asli grade premium."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Apakah melayani pengiriman pesanan ke luar negeri?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ya, kami melayani pengiriman internasional (Worldwide Shipping) menggunakan kurir ekspedisi terpercaya."
+            }
+          }
+        ]
+      }
+    ]
     </script>
 </body>
 </html>
