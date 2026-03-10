@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+	<meta name="google-site-verification" content="4phdc361kqEOCk9aDCPlG8iiHH_Cy1TMQRuYVRDOuHQ" />
+    <title>Koleksi Fashion Lokal Premium | Butik & Kerajinan Eksklusif</title>
+    <meta name="description" content="Tingkatkan gaya Anda dengan koleksi fashion dan kerajinan lokal premium kami. Desain eksklusif, jahitan rapi, dan material pilihan.">
+    
+    <link rel="preload" href="koleksi-fashion-wanita-elegan.webp" as="image" fetchpriority="high">
+    
+    <style>
+        /* NATIVE FONT & CLEAN NOISE BACKGROUND */
+        body {
+            margin: 0; min-height: 100vh;
+            font-family: system-ui, -apple-system, "Playfair Display", serif;
+            background-color: #fafafa; color: #333; overflow-x: hidden;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+        }
+
+        /* SOFT AMBIENT GLOW */
+        body::before { content: ""; position: absolute; top: -10vw; right: -10vw; width: 40vw; height: 40vw; background: radial-gradient(circle, rgba(212,175,55,0.15) 0%, transparent 70%); border-radius: 50%; z-index: -1; }
+        
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+
+        /* ELEGANT GLASSMORPHISM HEADER (ATTENTION) */
+        .elegant-header {
+            text-align: center; margin-bottom: 50px; padding: 50px 20px;
+            background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 1); border-radius: 2px; /* Square untuk kesan butik */
+            box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+        }
+        .elegant-header h1 { font-size: clamp(30px, 5vw, 42px); font-weight: 300; letter-spacing: 2px; margin: 0 0 15px; text-transform: uppercase; color: #111; }
+        .elegant-header h1 strong { font-weight: 700; background: linear-gradient(135deg, #d4af37 0%, #aa801b 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .elegant-header p { font-size: 1.1rem; color: #666; font-family: sans-serif; max-width: 600px; margin: 0 auto; }
+
+        /* HERO IMAGE */
+        .hero-img { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 2px; margin-bottom: 50px; box-shadow: 0 15px 35px rgba(0,0,0,0.08); }
+
+        /* BENTO KINETIC (INTEREST & DESIRE) */
+        h2 { text-align: center; font-size: 1.8rem; font-weight: 300; letter-spacing: 3px; margin: 60px 0 40px; text-transform: uppercase; }
+        .bento-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        
+        .light-card {
+            background: #fff; padding: 15px; border-radius: 2px; box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+            transition: all 0.5s ease; position: relative;
+        }
+        .light-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(212,175,55,0.15); }
+        .img-box { overflow: hidden; border-radius: 2px; aspect-ratio: 4/5; }
+        .img-box img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s; }
+        .light-card:hover img { transform: scale(1.05); }
+        
+        .card-info { text-align: center; padding: 20px 10px 10px; font-family: sans-serif; }
+        .card-info h3 { margin: 0 0 5px; font-size: 1.2rem; font-weight: 600; color: #111; }
+        .card-info p { margin: 0; color: #888; font-size: 0.9rem; }
+        .price { display: block; margin-top: 10px; color: #d4af37; font-weight: bold; font-size: 1.1rem; }
+
+        /* ELEGANT GOLD BEAM BUTTON (ACTION) */
+        .cta-wrapper { text-align: center; margin: 80px 0; }
+        @property --grad-angle { syntax: "<angle>"; initial-value: 0deg; inherits: false; }
+        @keyframes putar-cahaya { 0% { --grad-angle: 0deg; } 100% { --grad-angle: 360deg; } }
+        
+        .gold-laser-btn {
+            display: inline-flex; align-items: center; justify-content: center;
+            background: #fff; color: #111; padding: 18px 45px; font-size: 1rem; font-family: sans-serif; font-weight: 700; letter-spacing: 2px;
+            text-decoration: none; border-radius: 2px; position: relative; text-transform: uppercase; z-index: 1;
+            transition: all 0.3s; box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+        .gold-laser-btn::before, .gold-laser-btn::after {
+            content: ""; position: absolute; inset: -2px; z-index: -1; border-radius: inherit;
+            background: conic-gradient(from var(--grad-angle), #fff, #d4af37, #fff, #d4af37, #fff);
+            animation: putar-cahaya 4s linear infinite;
+        }
+        .gold-laser-btn::after { filter: blur(10px); opacity: 0.5; }
+        .gold-laser-btn:hover { background: #111; color: #d4af37; transform: translateY(-3px); }
+
+        /* LSI WHITE HAT (SEO) */
+        .seo-faq { margin-top: 60px; border-top: 1px solid #eee; padding-top: 20px; font-size: 0.8rem; color: #aaa; text-align: center; font-family: sans-serif; }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <header class="elegant-header">
+            <h1>Elevate Your <strong>Style</strong></h1>
+            <p>Mahakarya kerajinan dan fashion lokal dengan standar kualitas butik internasional. Dirancang khusus untuk Anda yang menghargai estetika.</p>
+        </header>
+
+        <img src="koleksi-fashion-wanita-elegan.webp" alt="Model menggunakan koleksi fashion lokal premium" class="hero-img" width="1000" height="562" fetchpriority="high" decoding="sync">
+
+        <h2>Koleksi Eksklusif</h2>
+        
+        <div class="bento-grid">
+            <article class="light-card">
+                <div class="img-box">
+                    <img src="jual-baju-tunik-premium-wanita.webp" alt="Baju Tunik Premium Wanita" width="400" height="500" loading="lazy">
+                </div>
+                <div class="card-info">
+                    <h3>Signature Tunic</h3>
+                    <p>Bahan Silk Premium yang jatuh dan sejuk.</p>
+                    <span class="price">Rp 299.000</span>
+                </div>
+            </article>
+            <article class="light-card">
+                <div class="img-box">
+                    <img src="tas-kulit-asli-kerajinan-lokal.webp" alt="Tas Kulit Asli Kerajinan Lokal" width="400" height="500" loading="lazy">
+                </div>
+                <div class="card-info">
+                    <h3>Leather Handbag</h3>
+                    <p>100% Kulit Sapi Asli buatan pengrajin Garut.</p>
+                    <span class="price">Rp 850.000</span>
+                </div>
+            </article>
+        </div>
+
+        <div class="cta-wrapper">
+            <a href="https://wa.me/628XXXXXXXXXX?text=Halo%20Admin,%20saya%20tertarik%20dengan%20koleksi..." class="gold-laser-btn">
+                Konsultasi & Pemesanan
+            </a>
+            <p style="color: #888; margin-top: 20px; font-size: 0.9rem; font-family: sans-serif;">Pengiriman aman ke seluruh Indonesia. Garansi tukar ukuran.</p>
+        </div>
+
+        <footer class="seo-faq">
+            <p><strong>Pencarian Terkait:</strong> jual baju tunik wanita elegan, tas kulit asli garut premium, kerajinan tangan lokal eksklusif, brand fashion lokal terbaik, umkm smesta fashion kriya, baju batik modern wanita.</p>
+        </footer>
+    </main>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "Koleksi Fashion Lokal Premium",
+      "image": "https://domainanda.com/koleksi-fashion-wanita-elegan.webp",
+      "description": "Butik fashion dan kerajinan kulit lokal dengan standar kualitas ekspor.",
+      "priceRange": "$$$",
+      "telephone": "+628XXXXXXXXXX"
+    }
+    </script>
+</body>
+</html>
